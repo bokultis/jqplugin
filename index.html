@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    
+		<script src="js/jquery-2.1.1.min.js"></script>
+		<script src="js/jquery-ui-1.11.2.custom/jquery-ui.min.js"></script>
+		<script src="js/jquery.make-me-circle.js"></script>
+		
+  
+<style type="text/css">
+
+.shape{
+		opacity: 0.8;
+	    filter: alpha(opacity=80); /* For IE8 and earlier */
+		-moz-border-radius: 140px;
+		border-radius: 140px;
+}
+
+#color1{
+	width: 300px;
+	height: 300px;
+	background-color: green;
+}
+
+#color2{
+	width: 300px;
+	height: 300px;
+	background-color: red;
+}
+
+
+#color3{
+	background-color: yellow;
+}
+</style>
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+	$("#color3").makeMeCircle();
+	$('#color1').draggable();
+});
+
+</script>
+
+    <title>Title of the document</title>
+  </head>
+
+  <body>
+
+  	<h1>Default H1 Title</h1>
+	    <div id="color1" class="shape">
+	    asdasdas
+	    </div>
+
+	    <div id="color2" class="shape">
+	    </div>
+
+	    <div id="color3">
+	    </div>
+  </body>
+
+</html> 
